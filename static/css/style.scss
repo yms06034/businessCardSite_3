@@ -1,0 +1,42 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 25px;
+  .flex-area {
+    display: flex;
+    justify-content: space-evenly;
+    .left-content {
+      width: 46%;
+      position: fixed;
+      left: 0;
+      margin-left: 30px;
+      margin-bottom: 50px;
+      img {
+        width: 95%;
+      }
+      .bbtn-area {
+        display: flex;
+        justify-content: space-evenly;
+        .bbtn {
+          background-color: #222;
+          border-radius: 5px;
+          padding: 13px 60px;
+          color: #fff;
+          font-size: 16px;
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+    .right-content {
+      width: 46%;
+      position: absolute;
+      right: 0;
+      margin-right: 30px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
