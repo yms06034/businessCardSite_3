@@ -1,18 +1,29 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding-top: 25px;
+  padding: 20px;
   .flex-area {
     display: flex;
     justify-content: space-evenly;
+    @media(max-width:992px) {
+      flex-direction: column;
+    }
     .left-content {
       width: 46%;
       position: fixed;
       left: 0;
       margin-left: 30px;
       margin-bottom: 50px;
+      @media(max-width:992px) {
+        width: 100%;
+        position: inherit;
+        margin-left: 0;
+      }
       img {
         width: 95%;
+        @media(max-width:992px) {
+          width: 100%;
+        }
       }
       .bbtn-area {
         display: flex;
@@ -23,6 +34,13 @@
           padding: 13px 60px;
           color: #fff;
           font-size: 16px;
+          vertical-align: bottom;
+          @media (max-width:500px) {
+            padding: 8px 40px;
+          }
+          @media(max-width:380px) {
+            padding: 8px 30px;
+          }
           &:hover {
             opacity: .7;
           }
@@ -34,6 +52,10 @@
       position: absolute;
       right: 0;
       margin-right: 30px;
+      @media(max-width:992px) {
+        width: 100%;
+        position: initial;
+      }
       img {
         width: 100%;
       }
