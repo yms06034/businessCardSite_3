@@ -29,6 +29,25 @@
         display: flex;
         justify-content: space-evenly;
         .bbtn {
+          display: flex;
+          background-color: #222;
+          border-radius: 5px;
+          padding: 13px 60px;
+          color: #fff;
+          font-size: 16px;
+          vertical-align: bottom;
+          @media (max-width:500px) {
+            padding: 8px 40px;
+          }
+          @media(max-width:380px) {
+            padding: 8px 30px;
+          }
+          &:hover {
+            opacity: .7;
+          }
+        }
+        .btn {
+          display: flex;
           background-color: #222;
           border-radius: 5px;
           padding: 13px 60px;
