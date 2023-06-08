@@ -28,6 +28,7 @@
       .bbtn-area {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         .bbtn {
           display: flex;
           background-color: #222;
@@ -63,6 +64,9 @@
           &:hover {
             opacity: .7;
           }
+        }
+        .top_btn {
+          margin-top: 20px;
         }
       }
     }
