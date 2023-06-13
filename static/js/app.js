@@ -16,6 +16,6 @@ btn.addEventListener('click', function() {
 });
 
 function checkM(m){
-	location.href = 'sms:' +'01046295627'+(m == 'ios' ? '&' : '?') + 'body='+ encodeURIComponent("군포역 트윈비스타 분양 정보 문의합니다.");
+	location.href = 'sms:' +'01056640975'+(m == 'ios' ? '&' : '?') + 'body='+ encodeURIComponent("군포역 트윈비스타 분양 정보 문의합니다.");
   console.log()
 }
